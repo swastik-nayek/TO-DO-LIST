@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Professional To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>📋 Task Manager</h1>
+
+  <!-- Top Input Form -->
+  <div class="form-section">
+    <input type="text" id="taskInput" placeholder="Enter task...">
+    <input type="datetime-local" id="expectedInput">
+    <button onclick="addTask()">Add Task</button>
+  </div>
+
+  <!-- Task Table Section -->
+  <div class="table-section">
+    <h2>All Tasks</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th>Created At</th>
+          <th>Expected By</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="taskTableBody">
+        <!-- Tasks will be injected here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

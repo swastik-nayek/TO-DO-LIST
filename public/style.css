@@ -1,0 +1,128 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #d9e4f5);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 30px 0 10px;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+/* Input Form at Top */
+.form-section {
+  background: #ffffff;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+.form-section input {
+  width: calc(100% - 24px);
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form-section input:focus {
+  outline: none;
+  border-color: #6c5ce7;
+}
+
+.form-section button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #6c5ce7, #a29bfe);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.form-section button:hover {
+  background: linear-gradient(to right, #5e54c5, #867df3);
+}
+
+/* Task Table Section */
+.table-section {
+  background: #ffffff;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 1100px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.table-section h2 {
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #6c5ce7;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #eee;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr.completed td {
+  background-color: #d4edda;
+  text-decoration: line-through;
+  color: #2e7d32;
+}
+
+button.done, button.delete {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button.done {
+  background-color: #00b894;
+  color: white;
+  margin-right: 5px;
+}
+
+button.done:hover {
+  background-color: #019875;
+}
+
+button.delete {
+  background-color: #ff7675;
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #e84343;
+}
